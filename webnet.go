@@ -13,6 +13,7 @@ import (
 )
 
 func init() {
+	//git remote add origin git@github.com:MiloTang/ctsp.git
 	config.ConfigPath = common.RootPath()
 	config.ConfigFile = config.ConfigPath + "/config/config.config"
 	fmt.Println(config.ConfigFile)
