@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$Title}</title>
+    <link rel="stylesheet" href="./home/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./home/static/css/bootstrap-theme.min.css">
+    <link href="./home/static/css/shoping.css" rel="stylesheet">
+    <link rel="stylesheet" href="./home/static/css/sweetalert.css">
+	<script src="./home/static/js/jquery.min.js"></script>
+    <script src="./home/static/js/bootstrap.min.js"></script>  
+    <script src="./home/static/js/sweetalert.min.js"></script>
+    <script src="./home/static/js/details.js"></script>
+    <script src='./home/static/js/jquery.elevatezoom.js'></script>
+</head>
+<body>
+{include file="header.tpl"}
+{include file="brand.tpl"}
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="index.html"><span style="color: rgb(255, 140, 60); font-size: 20px" class="glyphicon glyphicon-home"> 首页</span></a></li>
+        <li><a href="#"><h4>{$type}</h4></a></li>
+        <li><a href="#"><h4>产品名字</h4></a></li>
+    </ul>
+    <hr>
+    <div class="row">
+       <div class="col-sm-5 col-md-5">
+           <img id="zoom_pic" class="thumbnail" src="./home/static/images/small/image1.png" data-zoom-image="./home/static/images/large/image1.jpg"/>
+           <hr>
+           <div id="gallery_01">
+               <a href="#" data-image="./home/static/images/small/image1.png" data-zoom-image="./home/static/images/large/image1.jpg">
+                   <img id="img_01" src="./home/static/images/thumb/image1.jpg" />
+               </a>
+
+               <a href="#" data-image="./home/static/images/small/image2.png" data-zoom-image="./home/static/images/large/image2.jpg">
+                   <img id="img_02" src="./home/static/images/thumb/image2.jpg" />
+               </a>
+
+               <a href="#" data-image="./home/static/images/small/image3.png" data-zoom-image="./home/static/images/large/image3.jpg">
+                   <img id="img_03" src="./home/static/images/thumb/image3.jpg" />
+               </a>
+
+               <a href="#" data-image="./home/static/images/small/image4.png" data-zoom-image="./home/static/images/large/image4.jpg">
+                   <img id="img_04" src="./home/static/images/thumb/image4.jpg" />
+               </a>
+
+           </div>
+       </div>
+
+        <div class="col-sm-6 col-md-6">
+                   <h2><b>贵州高原山区野生竹荪</b></h2>
+           <label>竹荪为竹林腐生真菌，以分解死亡的竹根、竹竿和竹叶等为营养源。野生时多生长于楠竹、平竹、苦竹、慈竹等竹林里，其土质有黑色壤土、紫色土、黄泥土等。竹荪营腐生生活，其菌丝能穿透许多微生物的拮抗线，能利用许多微生物不能利用的纤维素、木质素。因此，人工栽培时，可用竹木屑及多种农作物秸秆及少量无机盐等，即可满足其营养需求。</label>
+            <div class="well">价格：<label style="font-size:30px;color: red">￥599.99</label> 
+			<label class="pull-right">月销量：999999 &nbsp;好评率：<span style="color: rgb(255, 72, 60);" class="glyphicon glyphicon-star"></span><span style="color: rgb(255, 72, 60);" class="glyphicon glyphicon-star"></span><span style="color: rgb(255, 72, 60);" class="glyphicon glyphicon-star"></span><span style="color: rgb(255, 72, 60);" class="glyphicon glyphicon-star"></span><span style="color: rgb(255, 72, 60);" class="glyphicon glyphicon-star"></span></label>
+		     </div>
+            <div style="float:left;font-size:22px">配 送 至：</div>
+            <div style="float:left"><select style="display:inline" name="zone_id" id="SelectProvince" class="form-control pull-left"></select></div>
+            <div style="float:left"><select style="display:inline" name="zone_id" id="SelectCity" class="form-control pull-left"></select></div>
+			<div style="float:left"><select style="display:inline" name="zone_id" id="SelectDistrict" class="form-control pull-left"></select></div>
+			<div style="clear:both"></div>
+			<br>
+			<div style="float:left;font-size:20px">购买：</div>
+            <div class="input-group input-group" style="width: 150px;float:left;">
+            <span class="input-group-btn">
+			
+               <button class="btn btn-default"  id="minus" type="button"><span style="color: rgb(255, 140, 60);" class="glyphicon glyphicon-minus" ></span></button>
+             </span>
+                <input type="text" class="form-control" id="num" value="1">
+                 <span class="input-group-btn">
+               <button class="btn btn-default" id="plus" type="button"><span style="color: rgb(255, 140, 60);" class="glyphicon glyphicon-plus" ></span></button>
+             </span>
+            </div>
+			<div style="float:left;font-size:20px;padding-left:20px">库存：1234件</div>
+			<div style="clear:both"></div>
+            <br>
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning btn-lg">立刻购买</button>
+                <button type="button" class="btn btn-danger btn-lg">加入购物车</button>
+                <button type="button" class="btn btn-info btn-lg">分享给好友</button>
+				<button type="button" class="btn btn-success btn-lg">收藏产品</button>
+            </div>
+        </div>
+    </div>
+	<hr>
+
+  <div class="tabbable" id="tabs-production" style="padding-top:20px"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+	<li class="active"><a href="#panel-details" data-toggle="tab" contenteditable="true">产品详情</a></li>
+	<li class=""><a href="#panel-message" data-toggle="tab" contenteditable="true">用户评论<b style="padding-left:10px;color:red">(1234)</b></a></li>
+	<li class=""><a href="#panel-server" data-toggle="tab" contenteditable="true">售后服务</a></li>
+  </ul>
+  <div class="tab-content">
+	<div class="tab-pane active" id="panel-details" contenteditable="true">
+	  <p>产品详情</p>
+	</div>
+	<div class="tab-pane" id="panel-message" contenteditable="true">
+	  <p>用户评论</p>
+	</div>
+	<div class="tab-pane" id="panel-server" contenteditable="true">
+	  <p>售后服务</p>
+	</div>
+  </div>
+</div>
+              
+
+</div>
+{include file="footer.tpl"}
+
+</body>
+</html>
