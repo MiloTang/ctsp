@@ -114,12 +114,8 @@ func (cs CookieSession) GetSessions() []string {
 func (cs CookieSession) GetSession(sessionID string, key interface{}) (interface{}, bool) {
 	cs.lock.Lock()
 	defer cs.lock.Unlock()
-	fmt.Println("getsession----->", cs.sessions)
-	fmt.Println("getsession----->", sessionID)
 	if session, ok := cs.sessions[sessionID]; ok {
-		fmt.Println(session)
 		if value, ok := session.values[key]; ok {
-			fmt.Println(value)
 			return value, true
 		}
 	}
@@ -182,8 +178,6 @@ func StartCS(w http.ResponseWriter, r *http.Request, url string, cs *CookieSessi
 			panic(err)
 		}
 	}
-	fmt.Println(csid)
-	fmt.Println(cs.sessions)
 	_, b := cs.GetSession(csid, Key)
 	return csid, b
 }

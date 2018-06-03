@@ -19,7 +19,8 @@ func Index(w http.ResponseWriter, r *http.Request) {
 }
 
 func Admin(w http.ResponseWriter, r *http.Request) {
-	user.GetUser("10000000")
+	u := user.GetUser("10000000")
+	fmt.Println(u)
 	csid, b := gocs.StartCS(w, r, "admin", gocs.CS)
 	fmt.Println("------>", b)
 	gocs.CS.SetSession(csid, gocs.Key, "test")
