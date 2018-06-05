@@ -14,7 +14,7 @@ var (
 )
 
 func Index(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("templates/home/index.html")
+	t, _ := template.ParseFiles("templates/home/index.html", "templates/home/header.html")
 	t.Execute(w, nil)
 }
 
