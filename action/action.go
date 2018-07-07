@@ -19,6 +19,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 }
 
 func Admin(w http.ResponseWriter, r *http.Request) {
+	res.Header().Set("Access-Control-Allow-Origin", "*")
 	u := user.GetUser("10000000")
 	fmt.Println(u)
 	csid, b := gocs.StartCS(w, r, "admin", gocs.CS)
