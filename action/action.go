@@ -1,6 +1,7 @@
 package action
 
 import (
+	"encoding/json"
 	"fmt"
 	"html/template"
 	"net/http"
@@ -14,7 +15,7 @@ var (
 )
 
 func Index(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("templates/home/index.html")
+	t, _ := template.ParseFiles("templates/home/index.html", "templates/home/header.html")
 	t.Execute(w, nil)
 }
 
@@ -25,7 +26,14 @@ func Admin(w http.ResponseWriter, r *http.Request) {
 	csid, b := gocs.StartCS(w, r, "admin", gocs.CS)
 	fmt.Println("------>", b)
 	gocs.CS.SetSession(csid, gocs.Key, "test")
-	fmt.Fprintln(w, "这是管理页面!")
+	us := user.GetUsers()
+	fmt.Println(us)
+	bss, errs := json.Marshal(us)
+	if errs != nil {
+		fmt.Println("json.Marshal failed:", errs)
+		return
+	}
+	fmt.Fprintln(w, string(bss))
 }
 func ErrorPage(w http.ResponseWriter, r *http.Request) {
 	p.Title = "城市小站"

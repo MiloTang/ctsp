@@ -1,425 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1">
-	<title>Swiper Appstore</title>
-
-	<link rel="stylesheet" href="css/idangerous.swiper.css">
-	<link rel="stylesheet" href="css/idangerous.swiper.3dflow.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/appstore.css">
+    <meta charset="UTF-8">
+    <title>{$Title}</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css//bootstrap-theme.min.css">
+    <link href="/css/shoping.css" rel="stylesheet">	
+	  <link rel="stylesheet" href="/css/idangerous.swiper.css">
+  <style>
+/* Demo Styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.swiper-container {
+  width: 100%;
+  height: 360px;
+  color: #fff;
+  text-align: center;
+}
+.red-slide {
+  background: #ca4040;
+}
+.blue-slide {
+  background: #4390ee;
+}
+.orange-slide {
+  background: #ff8604;
+}
+.green-slide {
+  background: #49a430;
+}
+.pink-slide {
+  background: #973e76;
+}
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  line-height: 45px;
+}
+.swiper-slide p {
+  font-style: italic;
+  font-size: 25px;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 10px;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #555;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+  </style>
 </head>
 <body>
-	<div class="swiper-container featured">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide" style="background-image:url(/images/home/big/1.jpg)">
-				<a href="http://www.idangero.us" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/2.jpg)">
-				<a href="http://www.idangero.us/sliders/moover/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/3.jpg)">
-				<a href="http://www.idangero.us/index.php?content=cat_item&id=62" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/4.jpg)">
-				<a href="http://www.idangero.us/sliders/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/5.jpg)">
-				<a href="http://www.idangero.us/sliders/swiper/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/6.jpg)">
-				<a href="http://www.idangero.us/sliders/s6/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/7.jpg)">
-				<a href="http://www.idangero.us/cs/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/1.jpg)">
-				<a href="http://www.idangero.us" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/2.jpg)">
-				<a href="http://www.idangero.us/sliders/moover/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/3.jpg)">
-				<a href="http://www.idangero.us/index.php?content=cat_item&id=62" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/4.jpg)">
-				<a href="http://www.idangero.us/sliders/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/5.jpg)">
-				<a href="http://www.idangero.us/sliders/swiper/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/6.jpg)">
-				<a href="http://www.idangero.us/sliders/s6/" target="_blank"></a>
-			</div>
-			<div class="swiper-slide" style="background-image:url(/images/home/big/7.jpg)">
-				<a href="http://www.idangero.us/cs/" target="_blank"></a>
-			</div>
-		</div>
-	</div>
-	<div class="swiper-container thumbs-cotnainer">
-		<div class="thumbs-title">New and interesting</div>
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/1.jpg" height="150" width="150" alt="">
-				<div class="app-title">Avengers</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/2.jpg" height="150" width="150" alt="">
-				<div class="app-title">Sleepless Night</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/3.jpg" height="150" width="150" alt="">
-				<div class="app-title">Seeking Justice</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/4.jpg" height="150" width="150" alt="">
-				<div class="app-title">Fire</div>
-				<div class="app-category">Games</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/5.jpg" height="150" width="150" alt="">
-				<div class="app-title">The Raid</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$5</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/6.jpg" height="150" width="150" alt="">
-				<div class="app-title">Dance All Night</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$7.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/7.jpg" height="150" width="150" alt="">
-				<div class="app-title">Jeff Who Lives At Home</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$22.49</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/8.jpg" height="150" width="150" alt="">
-				<div class="app-title">Two Guys</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$14.99</div>
-			</div>
-			
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/2.jpg" height="150" width="150" alt="">
-				<div class="app-title">Sleepless Night</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/1.jpg" height="150" width="150" alt="">
-				<div class="app-title">Avengers</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/4.jpg" height="150" width="150" alt="">
-				<div class="app-title">Fire</div>
-				<div class="app-category">Games</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/6.jpg" height="150" width="150" alt="">
-				<div class="app-title">Dance All Night</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$7.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/3.jpg" height="150" width="150" alt="">
-				<div class="app-title">Seeking Justice</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/8.jpg" height="150" width="150" alt="">
-				<div class="app-title">Two Guys</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$14.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/5.jpg" height="150" width="150" alt="">
-				<div class="app-title">The Raid</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$5</div>
-			</div>
-			
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/7.jpg" height="150" width="150" alt="">
-				<div class="app-title">Jeff Who Lives At Home</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$22.49</div>
-			</div>
-		</div>
-	</div>
-	<div class="swiper-container banners-container border-gradient">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/1.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/2.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/3.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/4.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/5.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/6.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/7.jpg)"></div>
-			</div>
-		</div>
-	</div>
-	<div class="swiper-container thumbs-cotnainer border-gradient">
-		<div class="thumbs-title">Popular</div>
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/1.jpg" height="150" width="150" alt="">
-				<div class="app-title">Avengers</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/2.jpg" height="150" width="150" alt="">
-				<div class="app-title">Sleepless Night</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/3.jpg" height="150" width="150" alt="">
-				<div class="app-title">Seeking Justice</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/4.jpg" height="150" width="150" alt="">
-				<div class="app-title">Fire</div>
-				<div class="app-category">Games</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/5.jpg" height="150" width="150" alt="">
-				<div class="app-title">The Raid</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$5</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/6.jpg" height="150" width="150" alt="">
-				<div class="app-title">Dance All Night</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$7.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/7.jpg" height="150" width="150" alt="">
-				<div class="app-title">Jeff Who Lives At Home</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$22.49</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/8.jpg" height="150" width="150" alt="">
-				<div class="app-title">Two Guys</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$14.99</div>
-			</div>
-			
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/2.jpg" height="150" width="150" alt="">
-				<div class="app-title">Sleepless Night</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/1.jpg" height="150" width="150" alt="">
-				<div class="app-title">Avengers</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/4.jpg" height="150" width="150" alt="">
-				<div class="app-title">Fire</div>
-				<div class="app-category">Games</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/6.jpg" height="150" width="150" alt="">
-				<div class="app-title">Dance All Night</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$7.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/3.jpg" height="150" width="150" alt="">
-				<div class="app-title">Seeking Justice</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/8.jpg" height="150" width="150" alt="">
-				<div class="app-title">Two Guys</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$14.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/5.jpg" height="150" width="150" alt="">
-				<div class="app-title">The Raid</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$5</div>
-			</div>
-			
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/7.jpg" height="150" width="150" alt="">
-				<div class="app-title">Jeff Who Lives At Home</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$22.49</div>
-			</div>
-		</div>
-	</div>
-	<div class="swiper-container banners-container border-gradient">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/1.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/2.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/3.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/4.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/5.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/6.jpg)"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner" style="background-image:url(/images/home/big/7.jpg)"></div>
-			</div>
-		</div>
-	</div>
-	<div class="swiper-container thumbs-cotnainer border-gradient">
-		<div class="thumbs-title">Another Awesome Group</div>
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/1.jpg" height="150" width="150" alt="">
-				<div class="app-title">Avengers</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/2.jpg" height="150" width="150" alt="">
-				<div class="app-title">Sleepless Night</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/3.jpg" height="150" width="150" alt="">
-				<div class="app-title">Seeking Justice</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/4.jpg" height="150" width="150" alt="">
-				<div class="app-title">Fire</div>
-				<div class="app-category">Games</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/5.jpg" height="150" width="150" alt="">
-				<div class="app-title">The Raid</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$5</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/6.jpg" height="150" width="150" alt="">
-				<div class="app-title">Dance All Night</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$7.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/7.jpg" height="150" width="150" alt="">
-				<div class="app-title">Jeff Who Lives At Home</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$22.49</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/8.jpg" height="150" width="150" alt="">
-				<div class="app-title">Two Guys</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$14.99</div>
-			</div>
-			
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/2.jpg" height="150" width="150" alt="">
-				<div class="app-title">Sleepless Night</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/1.jpg" height="150" width="150" alt="">
-				<div class="app-title">Avengers</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$10</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/4.jpg" height="150" width="150" alt="">
-				<div class="app-title">Fire</div>
-				<div class="app-category">Games</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/6.jpg" height="150" width="150" alt="">
-				<div class="app-title">Dance All Night</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$7.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/3.jpg" height="150" width="150" alt="">
-				<div class="app-title">Seeking Justice</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$15</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/8.jpg" height="150" width="150" alt="">
-				<div class="app-title">Two Guys</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$14.99</div>
-			</div>
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/5.jpg" height="150" width="150" alt="">
-				<div class="app-title">The Raid</div>
-				<div class="app-category">Music</div>
-				<div class="app-price">$5</div>
-			</div>
-			
-			<div class="swiper-slide">
-				<img src="/images/home/thumbs/7.jpg" height="150" width="150" alt="">
-				<div class="app-title">Jeff Who Lives At Home</div>
-				<div class="app-category">Movies</div>
-				<div class="app-price">$22.49</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<!-- Don't forget to get the latest Swiper and scrollbar version here-->
-	<script src="js/idangerous.swiper-2.0.min.js"></script>
-	<script src="js/idangerous.swiper.3dflow-2.0.js"></script>
-	<script src="js/appstore.js"></script>
+ {{ template "header" }}
+ include file="header.tpl" %}
+{include file="brand.tpl"}
+<div class="container">
+<div class="row">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide red-slide">
+        <div class="title">Free Mode</div>
+        <p>has no fixed positions</p>
+      </div>
+      <div class="swiper-slide blue-slide">
+        <div class="title">Fluid-Mode Enabled</div>
+        <p>When you release the slide, it keep moving for a while</p>
+      </div>
+      <div class="swiper-slide orange-slide">
+        <div class="title">Slide 3</div>
+        <p>Keep swiping</p>
+      </div>
+      <div class="swiper-slide green-slide">
+        <div class="title">Slide 4</div>
+        <p>Keep swiping</p>
+      </div>
+      <div class="swiper-slide pink-slide">
+        <div class="title">Slide 5</div>
+        <p>The last one</p>
+      </div>
+    </div>
+    <div class="pagination"></div>
+  </div>
+</div>
+    <div class="row">
+        <div class="page-header text-center">
+            <h2>
+                热销产品
+            </h2>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/a.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</h2>
+                </div>
+                <div class="button-group">
+                        <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                        <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                        <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/b.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/c.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/d.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/e.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/f.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/g.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/h.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="row">
+        <div class="page-header text-center">
+            <h2>
+                本周团购
+            </h2>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/i.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/j.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/k.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/d.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/e.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/f.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/g.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="product-thumb transition" >
+                <div class="image"><a href="#"><img src="/images/h.jpg" alt="MacBook" title="MacBook" class="img-responsive" width="100%" heigth="100%"></a></div>
+                <div >
+                    <h1><a href="#">高原小鲜菇</a></h1>
+                    
+                    <h2>
+                        价格：￥115</p>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-shopping-cart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-heart"> </span></button>
+                    <button type="button" class="btn btn-default"><span style="color: rgb(255, 140, 60);font-size: 20px" class="glyphicon glyphicon-share"> </span></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+ <script src="/js/jquery.min.js"></script>
+ <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/idangerous.swiper.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    paginationClickable: true,
+    freeMode: true,
+    freeModeFluid: true
+  })
+  </script>
+{include file="footer.tpl"}
 </body>
 </html>
